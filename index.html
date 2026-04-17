@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmer Mandi Smart Portal</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="logo">
+        <i class="fa-solid fa-leaf"></i>
+        <div>
+            <h3>FARMER MANDI</h3>
+            <p>SMART PORTAL</p>
+        </div>
+    </div>
+
+    <ul class="menu">
+        <li class="active"><i class="fa fa-home"></i> Dashboard</li>
+        <li><i class="fa fa-chart-line"></i> Market Prices</li>
+        <li><i class="fa fa-chart-bar"></i> Price Trends</li>
+        <li><i class="fa fa-scale-balanced"></i> Mandi Comparison</li>
+        <li><i class="fa fa-brain"></i> Prediction</li>
+    </ul>
+
+    <div class="farmer-card">
+        <p>Empowering Farmers with Real-time Market Intelligence</p>
+        <img src="assets/farmer.png">
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- TOPBAR -->
+<div class="topbar">
+    <i class="fa fa-bars"></i>
+
+    <div class="search-box">
+        <i class="fa fa-search"></i>
+        <input placeholder="Search crops, mandis...">
+    </div>
+
+    <div class="top-right">
+        <select>
+            <option>English</option>
+            <option>Hindi</option>
+        </select>
+
+        <div class="notification">
+            <i class="fa fa-bell"></i>
+            <span class="dot"></span>
+        </div>
+
+        <div class="user">
+            <img src="assets/avatar.png">
+            <div>
+                <b>Ramesh Kumar</b>
+                <p>Farmer</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h2>Welcome back, Ramesh Kumar!</h2>
+        <p>Make informed decisions and get best prices</p>
+    </div>
+</div>
+
+<!-- KPI -->
+<div class="kpi-row">
+    <div class="kpi"><h2>₹2143</h2><p>Average Price</p></div>
+    <div class="kpi"><h2>₹2850</h2><p>Highest Price</p></div>
+    <div class="kpi"><h2>₹1650</h2><p>Lowest Price</p></div>
+    <div class="kpi"><h2>128</h2><p>Mandis</p></div>
+</div>
+
+<!-- GRID -->
+<div class="grid">
+
+<div class="card">
+<h3>Market Prices</h3>
+<table>
+<tr><th>Crop</th><th>Mandi</th><th>Price</th></tr>
+<tr><td>Wheat</td><td>Indore</td><td>₹2850</td></tr>
+<tr><td>Paddy</td><td>Patna</td><td>₹2120</td></tr>
+<tr><td>Soybean</td><td>Dewas</td><td>₹4600</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h3>Price Trend</h3>
+<canvas id="chart"></canvas>
+</div>
+
+<div class="card">
+<h3>Prediction</h3>
+<canvas id="predictionChart"></canvas>
+</div>
+
+<div class="card">
+<h3>Top Mandis</h3>
+<ul>
+<li>Indore - ₹2850</li>
+<li>Dewas - ₹2760</li>
+<li>Ujjain - ₹2720</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
